@@ -1,8 +1,16 @@
 name: CI Pipeline
 
+name: Deploy to Dev
+
 on:
-  push:
-    branches: [ developer ]
+  workflow_dispatch:
+    inputs:
+      jira_key:
+        description: "Jira issue key"
+        required: false
+      initiated_by:
+        description: "Triggered by"
+        required: false
 
 jobs:
 
