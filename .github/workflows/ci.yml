@@ -1,7 +1,5 @@
 name: CI Pipeline
 
-name: Deploy to Dev
-
 on:
   workflow_dispatch:
     inputs:
